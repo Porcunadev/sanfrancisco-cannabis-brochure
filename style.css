@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Fahkwang';
+    font-family: 'Poppins';
+}
+
+.container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr .8fr 1fr;
+    grid-template-rows: 0.1fr 1fr 0.1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "title title title"
+      "info-section hero-img instructions"
+      "footer footer footer";
+
+    padding: 10px;
+    line-height: 1.5;
+  }
+
+  h2 {
+      font-size:2.4rem;
+  }
+  h3 {
+      font-size: 2rem;
+  }
+  p {
+      font-size: 1.2rem;
+  }
+
+
+  .title { grid-area: title;}
+  .title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+  }
+  .title img {
+      width: 100px;
+      height: 100px;
+  }
+  
+  .info-section { grid-area: info-section; }
+  .info-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+  }
+  
+  .hero-img { grid-area: hero-img; }
+  .hero-img {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+  .hero-img img {
+      width: 100%;
+  }
+  
+  .instructions { grid-area: instructions; }
+  .instructions {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+  }
+
+  .instruction {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+  }
+  .instruction img {
+      margin-right: 20px;
+  }
+  .instruction-7 {
+      display: flex;
+      justify-content:space-between;
+  }
+  .footer { grid-area: footer; }
+  .footer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
